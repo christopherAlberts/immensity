@@ -8,3 +8,6 @@ The idea behind the *immensity* function, was to create a strong encryption func
 
 ## How It Works ##
 
+
+
+![](Images/pythonpoweredlengthgif.gif)
