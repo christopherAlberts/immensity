@@ -10,8 +10,10 @@ The idea behind the *immensity* function, was to create a strong light weight en
 
 Going about encrypting text espesialy with the use of a computer is quite simple. If however you're not that fomilular with how a computer deals with the string datatype i.e. *text*. Here is a quick computer science theory lesson. 
 
-Computers can only understand numbers. In order to represente letters and other unique characters we make use of the ASCII table. ASCII(American Standard Code for Information Interchange) is the numerical representation of a character such as 'a' or '@' or an action of some sort such as *"Ens"* or *"Tab"*.
+Computers can only understand numbers. In order to represente letters and other unique characters we make use of the ASCII table. ASCII(American Standard Code for Information Interchange) is the numerical representation of a character such as 'a' or '@' or an action of some sort such as *"Ens"* or *"Tab"*. So to a computer each character is represented as a number between 0 and 255.
+The way I went about encrypting a string of text, was to take the number of each character and move it *n* either in the positive or negative direction on the ASCII table.
 
+To get a half desint encriptio each number will need to be moved a diffrent number of digets than the one before or after it. 
 
 
 ![](Images/pythonpoweredlengthgif.gif)
