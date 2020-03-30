@@ -45,7 +45,7 @@ After this was done it is easy to construct a new series. Just take the number i
 Something like this:
 
 
-![](Images/graph_num.png)
+![](Images/graph_and_num.png)
 
 
 ![](Images/pythonpoweredlengthgif.gif)
