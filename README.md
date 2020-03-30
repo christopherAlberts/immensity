@@ -54,7 +54,7 @@ You'll notice that the number graph does not match a 100%. Dis is due to switchi
 
 ## The Function ##
 
-### Multiprocessing, What is it ind why are all the cool kids talking about it? ###
+### Multiprocessing, what is it ind why are all the cool kids talking about it? ###
 
 
 ![](Images/pythonpoweredlengthgif.gif)
