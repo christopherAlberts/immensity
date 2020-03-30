@@ -19,24 +19,21 @@ So create a series that is unique every single time and that stretches to infini
 
 To do this I started by looking at already exsisting mathematical constants such as *pi* and the *Fibonacci sequence*. Below I listed the 13 matimatical constants used in this function. All of which stretches to infinity.
 
-```
 - fibonacci_sequence 
 - prime_numbers 
-twin_prime_constant 
-pi 
-degree 
-base_of_natural_logarithm 
-golden_ratio 
-eulers_constant 
-catalans_constant 
-aperys_constant 
-khinchins_constant 
-glaishers_constant 
-mertens_constant 
-```
+- twin_prime_constant 
+- pi 
+- degree 
+- base_of_natural_logarithm 
+- golden_ratio 
+- eulers_constant 
+- catalans_constant 
+- aperys_constant 
+- khinchins_constant 
+- glaishers_constant 
+- mertens_constant 
 
 So the first thing the *immensity* function does is look at how long the message is that needs to be encoded. It then selects a number of the formentioned mathimatical constants in a random order and costructs a grid the same lenth as the message.
-
 
 ![](Images/grid.png)
 
