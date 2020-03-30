@@ -39,6 +39,6 @@ So the first thing the *immensity* function does is look at how long the message
 
 Following this I thought it might be a nifty idea to draw a graph over this grid.
 
-
+![](Images/graph.png)
 
 ![](Images/pythonpoweredlengthgif.gif)
