@@ -35,7 +35,8 @@ glaishers_constant = ['1', '2', '8', '2', '4', '2', '7', '1', '2', '9', '1', '0'
 mertens_constant = ['0', '2', '6', '1', '4', '9', '7', '2', '1', '2', '8', '4', '7', '6', '4', '2', '7', '8', '3', '7']
 ```
 
-
+So the first thing the *immensity* function does is look at how long the message is that needs to be incoded. 
+It then selects a number of the formentioned mathimatical constants in a random order and costructs a grid the same lenth as the message.
 
 
 
