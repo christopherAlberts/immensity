@@ -46,9 +46,15 @@ Something like this:
 
 ![](Images/graph_and_num.png)
 
+```
+['2', '2', '1', '7', '0', '9', '5', '6', '9', '4', '1', '7', '7', '5', '3', '2', '2', '9', '5', '7', '0', '9', '2', '1', '3', '3', '6', '1', '3', '5', '8', '6', '6', '9', '9', '8', '0', '8', '3', '4']
+```
+
 You'll notice that the number graph does not match a 100%. Dis is due to switching between float and int data type in the sourse code. 
 
 ## The Function ##
+
+### Multiprocessing, What is it ind why are all the cool kids talking about it? ###
 
 
 ![](Images/pythonpoweredlengthgif.gif)
