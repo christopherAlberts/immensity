@@ -20,8 +20,8 @@ So create a series that is unique every single time and that stretches to infini
 To do this I started by looking at already exsisting mathematical constants such as *pi* and the *Fibonacci sequence*. Below I listed the 13 matimatical constants used in this function. All of which stretches to infinity.
 
 ```
-fibonacci_sequence 
-prime_numbers 
+>fibonacci_sequence 
+>prime_numbers 
 twin_prime_constant 
 pi 
 degree 
