@@ -6,7 +6,7 @@ An encryption function built on the same math used in mathematical constants lik
 
 The idea behind the *immensity* function, was to create a strong light weight encryption function that can easily be used in future code. So the *immensity* function is designd to either encrypt existing string variables, or it can be given a file path and then read text from the file in question. Following this the function is build so it can decrypt the messages as well.
 
-## The Idea ##
+## The Build ##
 
 Going about encrypting text espesialy with the use of a computer is quite simple. If however you're not that fomilular with how a computer deals with the string datatype i.e. *text*. Here is a quick computer science theory lesson. 
 
@@ -37,15 +37,16 @@ So the first thing the *immensity* function does is look at how long the message
 
 ![](Images/grid.png)
 
-We can now generat a pretty unique grid every time that stretches to infinity, But how does one gest a single series out of this grid the smae lenght as the message. I thought it might be a nifty idea to draw a graph over this grid.
+We can now generat a pretty unique grid every time that stretches to infinity, But how does one gest a single series out of this grid the smae lenght as the message. I thought it might be a nifty idea to draw a classic *Sin* graph over this grid.
 
 ![](Images/graph.png)
 
 After this was done it is easy to construct a new series. Just take the number in each colomb that the graph goes through.
 Something like this:
 
-
 ![](Images/graph_and_num.png)
+
+## How It Works ##
 
 
 ![](Images/pythonpoweredlengthgif.gif)
