@@ -37,8 +37,14 @@ So the first thing the *immensity* function does is look at how long the message
 
 ![](Images/grid.png)
 
-Following this I thought it might be a nifty idea to draw a graph over this grid.
+We can now generat a pretty unique grid every time that stretches to infinity, But how does one gest a single series out of this grid the smae lenght as the message. I thought it might be a nifty idea to draw a graph over this grid.
 
 ![](Images/graph.png)
+
+After this was done it is easy to construct a new series. Just take the number in each colomb that the graph goes through.
+Something like this:
+
+
+
 
 ![](Images/pythonpoweredlengthgif.gif)
