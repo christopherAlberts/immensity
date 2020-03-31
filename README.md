@@ -54,7 +54,7 @@ Something like this:
 ['2', '2', '1', '7', '0', '9', '5', '6', '9', '4', '1', '7', '7', '5', '3', '2', '2', '9', '5', '7', '0', '9', '2', '1', '3', '3', '6', '1', '3', '5', '8', '6', '6', '9', '9', '8', '0', '8', '3', '4']
 ```
 
-You'll notice that the number graph does not match a 100%. Dis is due to switching between float and int data type in the sourse code. 
+You'll notice that the number graph does not match a 100%. Dis is due to switching between the float and int data type in the sourse code. 
 
 We now have a unique series of numbers the same length as our message. This can be used to indicate the number of positions each of the original characters will move on the *"ASCII cyrcle"* as it were. This is how we go abouut incrypting our originam string. The series of numbers we abtained from ouur graph can also be used as a *'key'* to decrypt the encoded string, the only diffrince is the opporatoin will just need to be done in reverse.
 
