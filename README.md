@@ -60,7 +60,7 @@ We now have a unique series of numbers the same length as our message. This can 
 
 ## The Function ##
 
-### Multiprocessing, what is it ind why are all the cool kids talking about it? ###
+### Multiprocessing, what is it and why are all the cool kids using it? ###
 
 
 ![](Images/pythonpoweredlengthgif.gif)
