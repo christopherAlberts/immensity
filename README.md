@@ -37,7 +37,11 @@ So the first thing the *immensity* function does is look at how long the message
 
 ![](Images/grid.png)
 
-We can now generat a pretty unique grid every time that stretches to infinity, But how does one gest a single series out of this grid the smae lenght as the message. I thought it might be a nifty idea to draw a classic *Sin* graph over this grid.
+We can now generat a pretty unique grid but lets make it completely uninue. To do this I added a *'step'* to each of the uneanding series. This *'step'* is basicaly just a random number that indicates at which point the series will start. Each series gets their own unique number. Forinstange the first *'pi'* series could only start at it's 78th number and then continue from there, Where as the *'twin_prime_constant '* might start at 7 followed by antother *'pi'* series that starts at 39.
+
+Now we can create a truly uniue grid every time that stretches to infinity. But how does one gest a single series out of this grid the same lenght as the message. 
+
+at this point I thought it a nifty idea to draw a classic *Sin* graph over this grid.
 
 ![](Images/graph.png)
 
@@ -51,6 +55,8 @@ Something like this:
 ```
 
 You'll notice that the number graph does not match a 100%. Dis is due to switching between float and int data type in the sourse code. 
+
+We now have a unique series of numbers the same length as our message. This can be used to indicate the number of positions each of the original characters will move on the *"ASCII cyrcle"* as it were. This is how we go abouut incrypting our originam string. The series of numbers we abtained from ouur graph can also be used as a *'key'* to decrypt the encoded string, the only diffrince is the opporatoin will just need to be done in reverse.
 
 ## The Function ##
 
