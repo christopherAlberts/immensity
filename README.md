@@ -58,13 +58,14 @@ You'll notice that the number graph does not match a 100%. Dis is due to switchi
 
 We now have a unique series of numbers the same length as our message. This can be used to indicate the number of positions each of the original characters will move on the *"ASCII cyrcle"* as it were. This is how we go abouut incrypting our originam string. The series of numbers we abtained from ouur graph can also be used as a *'key'* to decrypt the encoded string, the only diffrince is the opporatoin will just need to be done in reverse.
 
-## The Function ##
-
 ### Multiprocessing, what is it and why are all the cool kids using it? ###
 
 The one potential issue with this function was that as the length of message, numbers of lists in the grid and step size increase, so to does the compute power needed to solve the algorithm. This means it can take long for the computer to solve the function. 
 
 I mitigated this by making use of Multiprosesing. Python nativly only runs on one processe ate a time. I wrote the coded to check the current hardware it's running on and then varias tasks to a number of diffrent processes. This means that the computer can start solving multiple of the computation problems at the same time. As the algorithm gets biger, this drastically reduces the time needed to solve it.
+
+
+## The Function ##
 
 
 ![](Images/pythonpoweredlengthgif.gif)
