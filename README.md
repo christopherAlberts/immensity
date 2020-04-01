@@ -56,7 +56,7 @@ Something like this:
 
 You'll notice that the number graph does not match a 100%. Dis is due to switching between the float and int data type in the sourse code. 
 
-We now have a unique series of numbers the same length as our message. This can be used to indicate the number of positions each of the original characters will move on the *"ASCII cyrcle"* as it were. This is how we go abouut incrypting our originam string. The series of numbers we abtained from ouur graph can also be used as a *'key'* to decrypt the encoded string, the only diffrince is the opporatoin will just need to be done in reverse.
+We now have a unique series of numbers the same length as our message. This can be used to indicate the number of positions each of the original characters will move on the *"ASCII cyrcle"* as it were. This is how we go abouut incrypting our originam string. 
 
 ### Multiprocessing, what is it and why are all the cool kids using it? ###
 
