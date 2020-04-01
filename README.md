@@ -81,4 +81,13 @@ The *'immensity'* function takes the following parameters.
 
 - __list_step__: This variable allows you to spesify the range the list step can fall into. again heiger this number the more secure the encryption will be but also the longer it will take to do the encrypt/decrypt.
 
+Here's an example of how the code will work:
+```
+from PythonProjects.Immensity.immensity import immensity
+
+if __name__ == '__main__':
+
+    print(immensity('encrypt','text',  "hello", 23, 0))
+```
+
 ![](Images/pythonpoweredlengthgif.gif)
