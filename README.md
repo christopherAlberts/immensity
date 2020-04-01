@@ -111,5 +111,18 @@ Output:
 Hello World!
 ```
 
+### Encrypt Text File ###
+
+Here is an example of *'immensity'* encrypteing a text file.
+```python3
+from Immensity.immensity import immensity
+
+if __name__ == '__main__':
+
+    print(immensity('encrypt','file',  "test.txt", 23, 0))
+```
+
+### Decrypt Text File ###
+
 
 ![](Images/pythonpoweredlengthgif.gif)
