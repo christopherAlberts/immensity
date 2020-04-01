@@ -111,6 +111,8 @@ Output:
 Hello World!
 ```
 
+___
+
 ### Encrypt Text File ###
 
 Here is an example of *'immensity'* encrypteing a text file.
