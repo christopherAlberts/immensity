@@ -126,6 +126,7 @@ Output:
 
 ### Decrypt Text File ###
 
+Now lets decrypt the file we just encrypted.
 ```python3
 from Immensity.immensity import immensity
 
