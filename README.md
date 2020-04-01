@@ -6,6 +6,53 @@ An encryption function built on the same math used in mathematical constants lik
 
 The idea behind the *immensity* function, was to create a strong light weight encryption function that can easily be used in future code. So the *immensity* function is designd to either encrypt existing string variables, or it can be given a file path and then read text from the file in question. Following this the function is build so it can decrypt the messages as well.
 
+## The Function ##
+
+The *'immensity'* function takes the following parameters.
+
+### immensity(encrypt_or_decript, text_or_file, data_input, num_of_lists, list_step) ###
+
+- __encrypt_or_decript__: 'encrypt' to encrypt text, 'decrypt' to decrypt text
+
+- __text_or_file__: If 'text' then the function will encrypt the string you put in as the *'data_input'*. Else if you use 'file' then instead of giving the string as *'data_input'*, you could give the file path of a text file containing the data you wish to encrypt. The function will then automatically read the data from this file and create a new file with the output.
+
+- __data_input__: In the context of the *'text_or_file'* variable, this could be either the string you which encrypt or it could be the file path of a text file containing the text you wish to encrypt.
+
+- __num_of_lists__: Here you can spesify the number of lists the grid will be made of. The heiger this number the more secure the encryption will be but also the longer it will take to do the encrypt/decrypt.
+
+- __list_step__: This variable allows you to spesify the range the list step can fall into. again heiger this number the more secure the encryption will be but also the longer it will take to do the encrypt/decrypt.
+
+### Encrypt String ###
+Here's an example of how the code will work. First lets stard by encoding the string *'Hello World!'*.
+```python3
+from Immensity.immensity import immensity
+
+if __name__ == '__main__':
+
+    print(immensity('encrypt','text',  "Hello World!", 23, 0))
+```
+
+Output:
+```python3
+{'encrypted_list': [72, 108, 109, 113, 116, 41, 88, 119, 119, 111, 105, 42], 'key': [[0, 11, 0, 12, 23], [1, 3, 0, 12, 23], [2, 2, 0, 12, 23], [3, 12, 0, 12, 23], [4, 12, 0, 12, 23], [5, 3, 0, 12, 23], [6, 8, 0, 12, 23], [7, 8, 0, 12, 23], [8, 4, 0, 12, 23], [9, 5, 0, 12, 23], [10, 5, 0, 12, 23], [11, 12, 0, 12, 23], [12, 12, 0, 12, 23], [13, 12, 0, 12, 23], [14, 3, 0, 12, 23], [15, 5, 0, 12, 23], [16, 6, 0, 12, 23], [17, 10, 0, 12, 23], [18, 4, 0, 12, 23], [19, 2, 0, 12, 23], [20, 6, 0, 12, 23], [21, 5, 0, 12, 23], [22, 12, 0, 12, 23]]}
+
+```
+
+### Decrypt String ###
+Now lets decode our ecrypted string. Please note that the *'data_input'* variable is not a string in this case bath rather the dictioonary we recieved when we encrypted our string.
+```python3
+from PythonProjects.Immensity.immensity import immensity
+
+if __name__ == '__main__':
+
+    print(immensity('decrypt','text',  {'encrypted_list': [72, 108, 109, 113, 116, 41, 88, 119, 119, 111, 105, 42], 'key': [[0, 11, 0, 12, 23], [1, 3, 0, 12, 23], [2, 2, 0, 12, 23], [3, 12, 0, 12, 23], [4, 12, 0, 12, 23], [5, 3, 0, 12, 23], [6, 8, 0, 12, 23], [7, 8, 0, 12, 23], [8, 4, 0, 12, 23], [9, 5, 0, 12, 23], [10, 5, 0, 12, 23], [11, 12, 0, 12, 23], [12, 12, 0, 12, 23], [13, 12, 0, 12, 23], [14, 3, 0, 12, 23], [15, 5, 0, 12, 23], [16, 6, 0, 12, 23], [17, 10, 0, 12, 23], [18, 4, 0, 12, 23], [19, 2, 0, 12, 23], [20, 6, 0, 12, 23], [21, 5, 0, 12, 23], [22, 12, 0, 12, 23]]}, 23, 0))
+```
+
+Output:
+```
+Hello World!
+```
+
 ## How It Works ##
 
 Going about encrypting text espesialy with the use of a computer is quite simple. If however you're not that fomilular with how a computer deals with the string datatype i.e. *text*. Here is a quick computer science theory lesson. 
@@ -64,51 +111,5 @@ The one potential issue with this function was that as the length of message, nu
 
 I mitigated this by making use of Multiprosesing. Python nativly only runs on one processe ate a time. I wrote the coded to check the current hardware it's running on and then assigen the varias tasks to a number of diffrent processes. This means that the computer can start solving multiple computation problems at the same time. As the algorithm gets biger, this drastically reduces the time needed to solve it.
 
-## The Function ##
-
-The *'immensity'* function takes the following parameters.
-
-### immensity(encrypt_or_decript, text_or_file, data_input, num_of_lists, list_step) ###
-
-- __encrypt_or_decript__: 'encrypt' to encrypt text, 'decrypt' to decrypt text
-
-- __text_or_file__: If 'text' then the function will encrypt the string you put in as the *'data_input'*. Else if you use 'file' then instead of giving the string as *'data_input'*, you could give the file path of a text file containing the data you wish to encrypt. The function will then automatically read the data from this file and create a new file with the output.
-
-- __data_input__: In the context of the *'text_or_file'* variable, this could be either the string you which encrypt or it could be the file path of a text file containing the text you wish to encrypt.
-
-- __num_of_lists__: Here you can spesify the number of lists the grid will be made of. The heiger this number the more secure the encryption will be but also the longer it will take to do the encrypt/decrypt.
-
-- __list_step__: This variable allows you to spesify the range the list step can fall into. again heiger this number the more secure the encryption will be but also the longer it will take to do the encrypt/decrypt.
-
-### Encrypt String ###
-Here's an example of how the code will work. First lets stard by encoding the string *'Hello World!'*.
-```python3
-from Immensity.immensity import immensity
-
-if __name__ == '__main__':
-
-    print(immensity('encrypt','text',  "Hello World!", 23, 0))
-```
-
-Output:
-```python3
-{'encrypted_list': [72, 108, 109, 113, 116, 41, 88, 119, 119, 111, 105, 42], 'key': [[0, 11, 0, 12, 23], [1, 3, 0, 12, 23], [2, 2, 0, 12, 23], [3, 12, 0, 12, 23], [4, 12, 0, 12, 23], [5, 3, 0, 12, 23], [6, 8, 0, 12, 23], [7, 8, 0, 12, 23], [8, 4, 0, 12, 23], [9, 5, 0, 12, 23], [10, 5, 0, 12, 23], [11, 12, 0, 12, 23], [12, 12, 0, 12, 23], [13, 12, 0, 12, 23], [14, 3, 0, 12, 23], [15, 5, 0, 12, 23], [16, 6, 0, 12, 23], [17, 10, 0, 12, 23], [18, 4, 0, 12, 23], [19, 2, 0, 12, 23], [20, 6, 0, 12, 23], [21, 5, 0, 12, 23], [22, 12, 0, 12, 23]]}
-
-```
-
-### Decrypt String ###
-Now lets decode our ecrypted string. Please note that the *'data_input'* variable is not a string in this case bath rather the dictioonary we recieved when we encrypted our string.
-```python3
-from PythonProjects.Immensity.immensity import immensity
-
-if __name__ == '__main__':
-
-    print(immensity('decrypt','text',  {'encrypted_list': [72, 108, 109, 113, 116, 41, 88, 119, 119, 111, 105, 42], 'key': [[0, 11, 0, 12, 23], [1, 3, 0, 12, 23], [2, 2, 0, 12, 23], [3, 12, 0, 12, 23], [4, 12, 0, 12, 23], [5, 3, 0, 12, 23], [6, 8, 0, 12, 23], [7, 8, 0, 12, 23], [8, 4, 0, 12, 23], [9, 5, 0, 12, 23], [10, 5, 0, 12, 23], [11, 12, 0, 12, 23], [12, 12, 0, 12, 23], [13, 12, 0, 12, 23], [14, 3, 0, 12, 23], [15, 5, 0, 12, 23], [16, 6, 0, 12, 23], [17, 10, 0, 12, 23], [18, 4, 0, 12, 23], [19, 2, 0, 12, 23], [20, 6, 0, 12, 23], [21, 5, 0, 12, 23], [22, 12, 0, 12, 23]]}, 23, 0))
-```
-
-Output:
-```
-Hello World!
-```
 
 ![](Images/pythonpoweredlengthgif.gif)
