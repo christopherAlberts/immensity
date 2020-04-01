@@ -81,18 +81,33 @@ The *'immensity'* function takes the following parameters.
 
 - __list_step__: This variable allows you to spesify the range the list step can fall into. again heiger this number the more secure the encryption will be but also the longer it will take to do the encrypt/decrypt.
 
-Here's an example of how the code will work:
+Here's an example of how the code will work. First lets stard by encoding the string *'Hello World!'*.
 ```
 from Immensity.immensity import immensity
 
 if __name__ == '__main__':
 
-    print(immensity('encrypt','text',  "hello", 23, 0))
+    print(immensity('encrypt','text',  "Hello World!", 23, 0))
+```
+
+Output:
+```python3
+{'encrypted_list': [72, 108, 109, 113, 116, 41, 88, 119, 119, 111, 105, 42], 'key': [[0, 11, 0, 12, 23], [1, 3, 0, 12, 23], [2, 2, 0, 12, 23], [3, 12, 0, 12, 23], [4, 12, 0, 12, 23], [5, 3, 0, 12, 23], [6, 8, 0, 12, 23], [7, 8, 0, 12, 23], [8, 4, 0, 12, 23], [9, 5, 0, 12, 23], [10, 5, 0, 12, 23], [11, 12, 0, 12, 23], [12, 12, 0, 12, 23], [13, 12, 0, 12, 23], [14, 3, 0, 12, 23], [15, 5, 0, 12, 23], [16, 6, 0, 12, 23], [17, 10, 0, 12, 23], [18, 4, 0, 12, 23], [19, 2, 0, 12, 23], [20, 6, 0, 12, 23], [21, 5, 0, 12, 23], [22, 12, 0, 12, 23]]}
+
+```
+
+Now lets decode our ecrypted string. Please note that the *'data_input'* variable is not a string in this case bath rather the dictioonary we recieved when we encrypted our string.
+```python3
+from PythonProjects.Immensity.immensity import immensity
+
+if __name__ == '__main__':
+
+    print(immensity('decrypt','text',  {'encrypted_list': [72, 108, 109, 113, 116, 41, 88, 119, 119, 111, 105, 42], 'key': [[0, 11, 0, 12, 23], [1, 3, 0, 12, 23], [2, 2, 0, 12, 23], [3, 12, 0, 12, 23], [4, 12, 0, 12, 23], [5, 3, 0, 12, 23], [6, 8, 0, 12, 23], [7, 8, 0, 12, 23], [8, 4, 0, 12, 23], [9, 5, 0, 12, 23], [10, 5, 0, 12, 23], [11, 12, 0, 12, 23], [12, 12, 0, 12, 23], [13, 12, 0, 12, 23], [14, 3, 0, 12, 23], [15, 5, 0, 12, 23], [16, 6, 0, 12, 23], [17, 10, 0, 12, 23], [18, 4, 0, 12, 23], [19, 2, 0, 12, 23], [20, 6, 0, 12, 23], [21, 5, 0, 12, 23], [22, 12, 0, 12, 23]]}, 23, 0))
 ```
 
 Output:
 ```
-{'encrypted_list': [107, 102, 109, 108, 115], 'key': [[0, 11, 0, 5, 23], [1, 7, 0, 5, 23], [2, 3, 0, 5, 23], [3, 8, 0, 5, 23], [4, 5, 0, 5, 23], [5, 11, 0, 5, 23], [6, 2, 0, 5, 23], [7, 6, 0, 5, 23], [8, 6, 0, 5, 23], [9, 3, 0, 5, 23], [10, 12, 0, 5, 23], [11, 3, 0, 5, 23], [12, 9, 0, 5, 23], [13, 2, 0, 5, 23], [14, 6, 0, 5, 23], [15, 2, 0, 5, 23], [16, 6, 0, 5, 23], [17, 5, 0, 5, 23], [18, 9, 0, 5, 23], [19, 7, 0, 5, 23], [20, 3, 0, 5, 23], [21, 2, 0, 5, 23], [22, 3, 0, 5, 23]]}
+Hello World!
 ```
 
 ![](Images/pythonpoweredlengthgif.gif)
