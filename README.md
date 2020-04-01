@@ -67,5 +67,18 @@ I mitigated this by making use of Multiprosesing. Python nativly only runs on on
 
 ## The Function ##
 
+The *'immensity'* function takes the following parameters.
+
+### immensity(encrypt_or_decript, text_or_file, data_input, num_of_lists, list_step) ###
+
+- __encrypt_or_decript__ = 'encrypt' to encrypt text, 'decrypt' to decrypt text
+
+- __text_or_file__ = If 'text' then the function will encrypt the string you put in as the *'data_input'*. Else if you use 'file' then instead of giving the string as *'data_input'*, you could give the file path of a text file containing the data you wish to encrypt. The function will then automatically read the data from this file and create a new file with the output.
+
+- __data_input__ = 
+
+- __num_of_lists__ =
+
+- __list_step__ =
 
 ![](Images/pythonpoweredlengthgif.gif)
