@@ -79,6 +79,6 @@ The *'immensity'* function takes the following parameters.
 
 - __num_of_lists__: Here you can spesify the number of lists the grid will be made of. The heiger this number the more secure the encryption will be but also the longer it will take to do the encrypt/decrypt.
 
-- __list_step__: This variable allows you to spesify 
+- __list_step__: This variable allows you to spesify the range the list step can fall into. again heiger this number the more secure the encryption will be but also the longer it will take to do the encrypt/decrypt.
 
 ![](Images/pythonpoweredlengthgif.gif)
