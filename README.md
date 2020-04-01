@@ -83,11 +83,16 @@ The *'immensity'* function takes the following parameters.
 
 Here's an example of how the code will work:
 ```
-from PythonProjects.Immensity.immensity import immensity
+from Immensity.immensity import immensity
 
 if __name__ == '__main__':
 
     print(immensity('encrypt','text',  "hello", 23, 0))
+```
+
+Output:
+```
+{'encrypted_list': [107, 102, 109, 108, 115], 'key': [[0, 11, 0, 5, 23], [1, 7, 0, 5, 23], [2, 3, 0, 5, 23], [3, 8, 0, 5, 23], [4, 5, 0, 5, 23], [5, 11, 0, 5, 23], [6, 2, 0, 5, 23], [7, 6, 0, 5, 23], [8, 6, 0, 5, 23], [9, 3, 0, 5, 23], [10, 12, 0, 5, 23], [11, 3, 0, 5, 23], [12, 9, 0, 5, 23], [13, 2, 0, 5, 23], [14, 6, 0, 5, 23], [15, 2, 0, 5, 23], [16, 6, 0, 5, 23], [17, 5, 0, 5, 23], [18, 9, 0, 5, 23], [19, 7, 0, 5, 23], [20, 3, 0, 5, 23], [21, 2, 0, 5, 23], [22, 3, 0, 5, 23]]}
 ```
 
 ![](Images/pythonpoweredlengthgif.gif)
