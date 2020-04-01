@@ -135,5 +135,6 @@ if __name__ == '__main__':
 ```
 
 Output:
+![](Images/textfile2.png)
 
 ![](Images/pythonpoweredlengthgif.gif)
