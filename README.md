@@ -71,14 +71,14 @@ The *'immensity'* function takes the following parameters.
 
 ### immensity(encrypt_or_decript, text_or_file, data_input, num_of_lists, list_step) ###
 
-- __encrypt_or_decript__ = 'encrypt' to encrypt text, 'decrypt' to decrypt text
+- __encrypt_or_decript__: 'encrypt' to encrypt text, 'decrypt' to decrypt text
 
-- __text_or_file__ : If 'text' then the function will encrypt the string you put in as the *'data_input'*. Else if you use 'file' then instead of giving the string as *'data_input'*, you could give the file path of a text file containing the data you wish to encrypt. The function will then automatically read the data from this file and create a new file with the output.
+- __text_or_file__: If 'text' then the function will encrypt the string you put in as the *'data_input'*. Else if you use 'file' then instead of giving the string as *'data_input'*, you could give the file path of a text file containing the data you wish to encrypt. The function will then automatically read the data from this file and create a new file with the output.
 
-- __data_input__ : In the context of the *'text_or_file'* variable, this could be either the string you which encrypt or it could be the file path of a text file containing the text you wish to encrypt.
+- __data_input__: In the context of the *'text_or_file'* variable, this could be either the string you which encrypt or it could be the file path of a text file containing the text you wish to encrypt.
 
-- __num_of_lists__ : Here you can spesify the number of lists the grid will be made of. The heiger this number the more secure the encryption will be but also the longer it will take to do the encrypt/decrypt.
+- __num_of_lists__: Here you can spesify the number of lists the grid will be made of. The heiger this number the more secure the encryption will be but also the longer it will take to do the encrypt/decrypt.
 
-- __list_step__ : This variable allows you to spesify 
+- __list_step__: This variable allows you to spesify 
 
 ![](Images/pythonpoweredlengthgif.gif)
