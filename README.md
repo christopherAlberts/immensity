@@ -121,10 +121,19 @@ if __name__ == '__main__':
 
     print(immensity('encrypt','file',  "test.txt", 23, 0))
 ```
-
+Output:
 ![](Images/textfile.png)
 
 ### Decrypt Text File ###
 
+```python3
+from Immensity.immensity import immensity
+
+if __name__ == '__main__':
+
+    print(immensity('decrypt','file',  "Immensity_Encrypt_01_04_2020_22_58_02.txt", 23, 0))
+```
+
+Output:
 
 ![](Images/pythonpoweredlengthgif.gif)
