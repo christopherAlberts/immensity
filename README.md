@@ -64,7 +64,7 @@ The one potential issue with this function was that as the length of message, nu
 
 I mitigated this by making use of Multiprosesing. Python nativly only runs on one processe ate a time. I wrote the coded to check the current hardware it's running on and then assigen the varias tasks to a number of diffrent processes. This means that the computer can start solving multiple computation problems at the same time. As the algorithm gets biger, this drastically reduces the time needed to solve it.
 
-### Normal One Process ###
+### Normal (One Process) ###
 ![](Images/not_multiprossesing.png)
 
 ### Multiprocessing ###
