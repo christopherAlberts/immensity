@@ -40,7 +40,7 @@ We can now generate a pretty unique grid but let's make it completely unique. To
 
 Now we can create a truly unique grid every time that stretches to infinity. But how does one get a single series out of this grid the same length as the message. 
 
-At this point I thought it a nifty idea to draw a classic *Sin* graph over this grid.
+At this point I thought it a nifty idea to draw a classic *Sin* graph over this grid. Any graph can do the trick, feel free to program your own one.
 
 ![](Images/graph.png)
 
