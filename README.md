@@ -65,9 +65,15 @@ The one potential issue with this function was that as the length of message, nu
 I mitigated this by making use of Multiprosesing. Python nativly only runs on one processe ate a time. I wrote the coded to check the current hardware it's running on and then assigen the varias tasks to a number of diffrent processes. This means that the computer can start solving multiple computation problems at the same time. As the algorithm gets biger, this drastically reduces the time needed to solve it.
 
 ### Normal (One Process) ###
+
+In the figure below each colour block represents a mathematical task that needs to be computed over time. 
 ![](Images/not_multiprossesing.png)
 
 ### Multiprocessing ###
+
+With multiprocessing there is some initial time needed for setup. This takes a few milisecocnds to do. Once this is done, each small task is assigned to a diffrent process. Now the computer can start computing multiple processes at once, which saves a lot of time the bigger and more complicated the encryption gets. If however the programs computational requerments is very little then multiprocessing can actualy take a bit longer. This being said it's not really note worthy, where as the time it saves on big equations, is.
+
+It is worth mentioning that one uses considerable more of the CPU capasity when running a script with multipleprocesses. 
 ![](Images/multiprocessing_graph.png)
 
 
