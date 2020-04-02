@@ -32,19 +32,19 @@ To do this I started by looking at already existing mathematical constants such 
 - glaishers_constant 
 - mertens_constant 
 
-So the first thing the *immensity* function does is look at how long the message is that needs to be encoded. It then selects a number of the formentioned mathimatical constants in a random order and costructs a grid the same lenth as the message.
+So the first thing the *immensity* function does is look at how long the message is that needs to be encoded. It then selects a number of the aforementioned Mathematical constants in a random order and constructs a grid the same length as the message.
 
 ![](Images/grid.png)
 
-We can now generat a pretty unique grid but lets make it completely uninue. To do this I added a *'step'* to each of the uneanding series. This *'step'* is basicaly just a random number that indicates at which point the series will start. Each series gets their own unique number. Forinstange the first *'pi'* series could only start at it's 78th number and then continue from there, Where as the *'twin_prime_constant '* might start at 7 followed by antother *'pi'* series that starts at 39.
+We can now generate a pretty unique grid but let's make it completely unique. To do this I added a *'step'* to each of the unending series. This *'step'* is basically just a random number that indicates at which point the series will start. Each series gets their own unique number. For instance the first *'pi'* series could only start at its 78th number and then continue from there, Whereas the *'twin_prime_constant'* might start at 7 followed by another *'pi'* series that starts at 39.
 
-Now we can create a truly uniue grid every time that stretches to infinity. But how does one gest a single series out of this grid the same lenght as the message. 
+Now we can create a truly unique grid every time that stretches to infinity. But how does one get a single series out of this grid the same length as the message. 
 
-at this point I thought it a nifty idea to draw a classic *Sin* graph over this grid.
+At this point I thought it a nifty idea to draw a classic *Sin* graph over this grid.
 
 ![](Images/graph.png)
 
-After this was done it is easy to construct a new series. Just take the number in each colomb that the graph goes through.
+After this was done it is easy to construct a new series. Just take the number in each column that the graph goes through.
 Something like this:
 
 ![](Images/graph_and_num.png)
