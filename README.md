@@ -3,7 +3,7 @@ An encryption function built on the same math used in mathematical constants lik
 
 ![](Images/immensity().png)
 
-The idea behind the *immensity* function, was to create a strong lightweight encryption function that can easily be used in future code. So the *immensity* function is designed to either encrypt existing string variables, or it can be given a file path and then read text from the file in question. Following this the function is build so it can decrypt the messages as well.
+The idea behind the *immensity* function, was to create a strong lightweight encryption function that can easily be used in future code. So the *immensity* function is designed to either encrypt existing string variables, or it can be given a file path and then read text from the file in question. Following this the function is built so it can decrypt the messages as well.
 
 ## How It Works ##
 
@@ -12,7 +12,7 @@ Going about encrypting text especially with the use of a computer is quite simpl
 Computers can only understand numbers. In order to represent letters and other unique characters we make use of the ASCII table. ASCII(American Standard Code for Information Interchange) is the numerical representation of a character such as 'a' or '@' or an action of some sort such as *`Esc`* or *`Tab`*. So to a computer each character is represented as a number between 0 and 255.
 The way I went about encrypting a string of text, was to take the number of each character and move it *n* either in the positive or negative direction on the ASCII table.
 
-I worked on the premiss that the ASCII table is arranged as a circle this will allow me to move the digits more than a max of 255 positions at any give time. To get a half decent encryption, each number will need to be moved a different number of digits than the one before or the one after. Thus, I'll need a unique series of number rotations at least the length of the message being encoded. And as we don't know what the length of the message is going to be, well lets cater for infinity just to be safe.
+I worked on the premise that the ASCII table is arranged as a circle this will allow me to move the digits more than a max of 255 positions at any give time. To get a half decent encryption, each number will need to be moved a different number of digits than the one before or the one after. Thus, I'll need a unique series of number rotations at least the length of the message being encoded, and as we don't know what the length of the message is going to be, well lets cater for infinity just to be safe.
 
 So create a series that is unique every single time and that stretches to infinity.
 
@@ -53,7 +53,7 @@ Something like this:
 ['2', '2', '1', '7', '0', '9', '5', '6', '9', '4', '1', '7', '7', '5', '3', '2', '2', '9', '5', '7', '0', '9', '2', '1', '3', '3', '6', '1', '3', '5', '8', '6', '6', '9', '9', '8', '0', '8', '3', '4']
 ```
 
-You'll notice that the number graph does not match a 100%. This is due to switching between the float and int data type in the source code. 
+You'll notice that the number graph does not match 100%. This is due to switching between the float and int data type in the source code. 
 
 We now have a unique series of numbers the same length as our message. This can be used to indicate the number of positions each of the original characters will move on the *"ASCII circle"* as it were. This is how we go about encrypting our original string. 
 
@@ -61,7 +61,7 @@ We now have a unique series of numbers the same length as our message. This can 
 
 The one potential issue with this function was that as the length of message, numbers of lists in the grid and step size increase, so to does the compute power needed to solve the algorithm. This means it can take long for the computer to complete the function. 
 
-I mitigated this by making use of multiprocessing. Python natively only runs on one processes ate a time. I wrote the coded to check the current hardware it's running on and then assign the varies tasks to a number of different processes. This means that the computer can start solving multiple computation problems at the same time. As the algorithm gets bigger, this drastically reduces the time needed to solve it.
+I mitigated this by making use of multiprocessing. Python natively only runs on one processor at a time. I wrote the code to check the current hardware it's running on and then assign the various tasks to a number of different processors. This means that the computer can start solving multiple computation problems at the same time. As the algorithm gets bigger, this drastically reduces the time needed to solve it.
 
 ### Normal (One Process) ###
 
@@ -72,7 +72,7 @@ In the figure below each colour block represents a mathematical task that needs 
 
 With multiprocessing there is some initial time needed for setup. This takes a few milliseconds to do. Once this is done, each small task is assigned to a different process. Now the computer can start computing multiple processes at once, which saves a lot of time the bigger and more complicated the encryption gets. If however the programs computational requirements is very little then multiprocessing can actually take a bit longer. This being said it's not really noteworthy, whereas the time it saves on big equations, is.
 
-It is worth mentioning that one uses considerable more of the CPU capacity when running a script with multiple processes. Don't be surprised if your CPU clocks a 100%. This function is written to make full use of the compute power available to it.
+It is worth mentioning that one uses considerable more of the CPU capacity when running a script with multiple processes. Don't be surprised if your CPU clocks a 100%. This function is written to make full use of the compute power ava•••••••••ilable to it.
 ![](Images/multiprocessing_graph.png)
 
 ## The Function ##
