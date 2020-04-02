@@ -87,12 +87,12 @@ The *'immensity'* function takes the following parameters.
 
 - __data_input__: In the context of the *'text_or_file'* variable, this could be either the string you which encrypt or it could be the file path of a text file containing the text you wish to encrypt.
 
-- __num_of_lists__: Here you can spesify the number of lists the grid will be made of. The heiger this number the more secure the encryption will be but also the longer it will take to do the encrypt/decrypt.
+- __num_of_lists__: Here you can specify the number of lists the grid will be made of. The Higher this number the more secure the encryption will be but also the longer it will take to do the encryption/decryption.
 
-- __list_step__: This variable allows you to spesify the range the list step can fall into. again heiger this number the more secure the encryption will be but also the longer it will take to do the encrypt/decrypt.
+- __list_step__: This variable allows you to specify the range the list step can fall into. Again the higher this number the more secure the encryption will be but also the longer it will take to do the encryption/decryption.
 
 ### Encrypt String ###
-Here's an example of how the code will work. First lets stard by encoding the string *'Hello World!'*.
+Here's an example of how the code will work. First lets start by encoding the string *'Hello World!'*.
 ```python3
 from Immensity.immensity import immensity
 
@@ -108,7 +108,7 @@ Output:
 ```
 
 ### Decrypt String ###
-Now lets decode our ecrypted string. Please note that the *'data_input'* variable is not a string in this case bath rather the dictioonary we recieved when we encrypted our string.
+Now let's decode our encrypted string. Please note that the *'data_input'* variable is not a string in this case bath rather the dictionary we received when we encrypted our string.
 ```python3
 from PythonProjects.Immensity.immensity import immensity
 
@@ -125,8 +125,7 @@ Hello World!
 ___
 
 ### Encrypt Text File ###
-
-Here is an example of *'immensity'* encrypteing a text file.
+Here is an example of *'immensity'* encrypting a text file.
 ```python3
 from Immensity.immensity import immensity
 
@@ -139,7 +138,7 @@ Output:
 
 ### Decrypt Text File ###
 
-Now lets decrypt the file we just encrypted.
+Now let's decrypt the file we just encrypted.
 ```python3
 from Immensity.immensity import immensity
 
