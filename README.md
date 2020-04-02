@@ -53,15 +53,15 @@ Something like this:
 ['2', '2', '1', '7', '0', '9', '5', '6', '9', '4', '1', '7', '7', '5', '3', '2', '2', '9', '5', '7', '0', '9', '2', '1', '3', '3', '6', '1', '3', '5', '8', '6', '6', '9', '9', '8', '0', '8', '3', '4']
 ```
 
-You'll notice that the number graph does not match a 100%. Dis is due to switching between the float and int data type in the sourse code. 
+You'll notice that the number graph does not match a 100%. This is due to switching between the float and int data type in the source code. 
 
-We now have a unique series of numbers the same length as our message. This can be used to indicate the number of positions each of the original characters will move on the *"ASCII cyrcle"* as it were. This is how we go abouut incrypting our originam string. 
+We now have a unique series of numbers the same length as our message. This can be used to indicate the number of positions each of the original characters will move on the *"ASCII circle"* as it were. This is how we go about encrypting our original string. 
 
 ## Multiprocessing, what is it and why are all the cool kids using it? ##
 
 The one potential issue with this function was that as the length of message, numbers of lists in the grid and step size increase, so to does the compute power needed to solve the algorithm. This means it can take long for the computer to complete the function. 
 
-I mitigated this by making use of Multiprosesing. Python nativly only runs on one processe ate a time. I wrote the coded to check the current hardware it's running on and then assigen the varias tasks to a number of diffrent processes. This means that the computer can start solving multiple computation problems at the same time. As the algorithm gets biger, this drastically reduces the time needed to solve it.
+I mitigated this by making use of multiprocessing. Python natively only runs on one processes ate a time. I wrote the coded to check the current hardware it's running on and then assign the varies tasks to a number of different processes. This means that the computer can start solving multiple computation problems at the same time. As the algorithm gets bigger, this drastically reduces the time needed to solve it.
 
 ### Normal (One Process) ###
 
@@ -70,9 +70,9 @@ In the figure below each colour block represents a mathematical task that needs 
 
 ### Multiprocessing ###
 
-With multiprocessing there is some initial time needed for setup. This takes a few milisecocnds to do. Once this is done, each small task is assigned to a diffrent process. Now the computer can start computing multiple processes at once, which saves a lot of time the bigger and more complicated the encryption gets. If however the programs computational requerments is very little then multiprocessing can actualy take a bit longer. This being said it's not really note worthy, where as the time it saves on big equations, is.
+With multiprocessing there is some initial time needed for setup. This takes a few milliseconds to do. Once this is done, each small task is assigned to a different process. Now the computer can start computing multiple processes at once, which saves a lot of time the bigger and more complicated the encryption gets. If however the programs computational requirements is very little then multiprocessing can actually take a bit longer. This being said it's not really noteworthy, whereas the time it saves on big equations, is.
 
-It is worth mentioning that one uses considerable more of the CPU capasity when running a script with multipleprocesses. Don't be supprised if you CPU clocks a 100%. This function is writen to make full use of the compute power available to it.
+It is worth mentioning that one uses considerable more of the CPU capacity when running a script with multiple processes. Don't be surprised if your CPU clocks a 100%. This function is written to make full use of the compute power available to it.
 ![](Images/multiprocessing_graph.png)
 
 ## The Function ##
