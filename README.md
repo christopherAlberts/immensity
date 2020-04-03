@@ -72,7 +72,7 @@ In the figure below each colour block represents a mathematical task that needs 
 
 With multiprocessing there is some initial time needed for setup. This takes a few milliseconds to do. Once this is done, each small task is assigned to a different process. Now the computer can start computing multiple processes at once, which saves a lot of time the bigger and more complicated the encryption gets. If however the programs computational requirements is very little then multiprocessing can actually take a bit longer. This being said it's not really noteworthy, whereas the time it saves on big equations, is.
 
-It is worth mentioning that one uses considerable more of the CPU capacity when running a script with multiple processes. Don't be surprised if your CPU clocks a 100%. This function is written to make full use of the compute power ava•••••••••ilable to it.
+It is worth mentioning that one uses considerable more of the CPU capacity when running a script with multiple processes. Don't be surprised if your CPU clocks a 100%. This function is written to make full use of the compute power available to it.
 ![](Images/multiprocessing_graph.png)
 
 ## The Function ##
