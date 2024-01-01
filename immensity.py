@@ -886,3 +886,5 @@ def immensity(encrypt_or_decript, text_or_file, data_input, num_of_lists, list_s
 # -----------------------------------------------------------------------
 
 
+if __name__ == "__main__":
+    immensity()
