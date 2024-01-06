@@ -885,6 +885,65 @@ def immensity(encrypt_or_decript, text_or_file, data_input, num_of_lists, list_s
 # logging.basicConfig(level=logging.INFO, format='%(asctime)s: line:%(lineno)d: %(levelname)s: %(message)s')
 # -----------------------------------------------------------------------
 
+def run_immensity():
 
-if __name__ == "__main__":
-    immensity()
+    command = ''
+    while command != 'x':
+
+        print('Would you like to ENCRYPT(e) or DECRYPT(d)? Or press "x" to exit.')
+        command = input()
+
+        if command.lower() in ['encrypt', 'e']:
+
+            print('Would you like to apply this function to TEXT(t) or a FILE(f)?')
+            command = input()
+
+            if command.lower() in ['text', 't']:
+
+                print("Please enter the text you'd like to encrypt.")
+                command = input()
+
+                print(immensity('encrypt','text',  command, 23, 0))
+
+            elif command.lower() in ['file', 'f']:
+                print("Please enter the file path you'd like to encrypt.")
+                command = input()
+
+                immensity('encrypt', 'file', command, 23, 0)
+                print("File has been Encrypted.")
+
+            else:
+                print("Did not recognise command, please try again.")
+
+        elif command.lower() in ['decrypt', 'd']:
+
+            print('Would you like to apply this function to TEXT(t) or a FILE(f)?')
+            command = input()
+
+            if command.lower() in ['text', 't']:
+                print("Please enter the text you'd like to decrypt.")
+                command = input()
+                decrypt_command = ast.literal_eval(command)
+
+                print(immensity('decrypt', 'text', decrypt_command, "none", "none"))
+
+            elif command.lower() in ['file', 'f']:
+                print("-> Please enter the file path you'd like to decrypt.")
+                command = input()
+
+                immensity('decrypt', 'file', command, "none", "none")
+
+                print("File has been Decrypted.")
+
+            else:
+                print("Did not recognise command, please try again.")
+
+        if command.lower() in ['exit', 'x', 'e']:
+            break
+
+    print('Immensity - Done!')
+
+
+if __name__ == '__main__':
+
+    run_immensity()

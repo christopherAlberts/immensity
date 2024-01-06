@@ -3,6 +3,17 @@ An encryption function built on the same math used in mathematical constants lik
 
 ![](Images/immensity().png)
 
+[//]: # ([![Releases]&#40;https://img.shields.io/badge/Github-Releases-blue&#41;]&#40;https://github.com/christopherAlberts/The-Vault-3-Directory-Edition/releases&#41;)
+
+[//]: # ([![Languages]&#40;https://img.shields.io/badge/Python-FFD43B?&logo=python&logoColor=blue&#41;]&#40;immensity.py&#41;)
+
+[//]: # ([![OS]&#40;https://img.shields.io/badge/Windows-0078D6?&logo=windows&logoColor=white&#41;]&#40;README.md&#41; <!--added readme links, just to not go elseweher -->)
+
+[//]: # ([![Github All Releases]&#40;https://img.shields.io/github/downloads/christopherAlberts/The-Vault-3-Directory-Edition/total?label=Downloads&#41;]&#40;https://github.com/christopherAlberts/The-Vault-3-Directory-Edition/archive/refs/tags/Vault.zip&#41;)
+
+[//]: # ([![license]&#40;https://img.shields.io/github/license/abhijeetbyte/MYPmanager&#41;]&#40;LICENSE&#41;)
+
+
 The idea behind the *immensity* function, was to create a strong lightweight encryption function that can easily be used in future code. So the *immensity* function is designed to either encrypt existing string variables, or it can be given a file path and then read text from the file in question. Following this the function is built so it can decrypt the messages as well.
 
 ## How It Works ##
